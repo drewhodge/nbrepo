@@ -1,4 +1,4 @@
-# Find IP address (Mac OS X Terminal)
+# cli: Find IP address (Mac OS X Terminal)
 
   Use following in Terminal:
 
