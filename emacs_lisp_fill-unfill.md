@@ -1,4 +1,4 @@
-# emacsmacs: Lisp fill-unfill paragraphs
+# emacs: Lisp fill-unfill paragraphs
 
 ```
 ;; Unfill paragraphs and regions
