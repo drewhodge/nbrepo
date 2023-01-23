@@ -1,4 +1,4 @@
-* Lynx Browser  -- useful commands
+# Lynx Browser  -- useful commands
 
 | Keyboard shortcuts | Description                                                    |
 |--------------------+----------------------------------------------------------------|
