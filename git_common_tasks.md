@@ -5,6 +5,9 @@
 []: # 'Also this is a comment'
 [//]: # (Yet another comment)
 [comment]: # (Still another comment)
+<!-- comment: 2 leading dashes -->
+<!--- comment: 3 leading dashes -->
+
 
 ## Simple Git workflow
 
