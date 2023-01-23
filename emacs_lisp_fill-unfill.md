@@ -1,6 +1,6 @@
-#+TITLE: Lisp fill-unfill paragraphs
+# Lisp fill-unfill paragraphs
 
-#+BEGIN_SRC lisp
+```
 ;; Unfill paragraphs and regions
 (defun unfill-paragraph ()
   (interactive)
@@ -11,4 +11,4 @@
   (interactive)
   (let ((fill-column (point-max)))
     (fill-region (region-beginning) (region-end) nil)))
-#+END_SRC
+```
