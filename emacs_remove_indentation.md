@@ -1,4 +1,4 @@
-* Remove indentation (~unfill~)
+# Emacs: Remove indentation (~unfill~)
 
 Place cursor at the end of the line and press M-^.
 
