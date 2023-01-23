@@ -1,5 +1,11 @@
 # Common Git tasks
 
+[]: # (This is a comment)
+[]: # "And this is a comment"
+[]: # 'Also this is a comment'
+[//]: # (Yet another comment)
+[comment]: # (Still another comment)
+
 ## Simple Git workflow
 
   From: http://jezenthomas.com/my-uncomplicated-git-workflow/
