@@ -1,4 +1,4 @@
-# Common Git tasks
+# git: Common Git tasks
 
 []: # (This is a comment)
 []: # "And this is a comment"
