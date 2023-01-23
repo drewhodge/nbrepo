@@ -1,6 +1,6 @@
-#+TITLE: Common Git tasks
+# Common Git tasks
 
-* Simple Git workflow
+## Simple Git workflow
 
   From: http://jezenthomas.com/my-uncomplicated-git-workflow/
 
@@ -22,7 +22,7 @@
   actively maintained any more, but it still works regardless. I don't use
   git-flow, and I advise against using it because it is needlessly complex.
 
-** Reasons for only using Git in the terminal:
+### Reasons for only using Git in the terminal:
 
    - I want to protect my arms, wrists, hands, and fingers by not
      having to shuffle a cursor around the screen with a mouse o
@@ -33,7 +33,7 @@
      like SourceTree less intimidating than Git's command-line
      interface.
 
-** Pulling changes 
+### Pulling changes 
 
    A *typical working* session for me begins with
    pulling the latest changes from the remote repository. I use the
@@ -45,7 +45,7 @@
    commands it's running and when, so you can learn more about Git
    while it makes decisions for you.
 
-** Reviewing changes 
+### Reviewing changes 
 
    After I have spent time working on a task, I will check the status
    of the working directory with the standard =git status= command,
@@ -62,7 +62,7 @@
    speed. I do make an effort to keep my commits small, so I am
    usually able to scan the diff in about a second.
 
-** Staging changes 
+### Staging changes 
 
    Now I am ready to begin staging my changes. In the cases when I
    want to stage everything — and this is the most common case — I use
@@ -80,7 +80,7 @@
    staged, but git diff alone won't work here. For staged changes, you
    need to run =git diff --cached=, which I have aliased to =git dc=.
 
-** Committing changes 
+### Committing changes 
 
    When I'm ready to commit my changes, I run =git commit=, which I have
    aliased to git ci. I almost never use the =-m= flag when
@@ -95,7 +95,7 @@
    ensure I have the latest changes locally, and then I run git push
    to share my work with my team.
 
-** Working with branches 
+### Working with branches 
 
    I'm generally not a fan of the pull-request model of collaboration,
    and I don't like the idea that a team of developers can't trust one
@@ -121,14 +121,14 @@
    those commands that decides the best strategy for merging given
    some context, and it's always just done the right thing for me.
 
-** The view from 10,000 feet 
+### The view from 10,000 feet 
 
    From time to time, I like to briefly check how the project has been
    progressing, and again git-smart pulls through for us here
    providing the =git smart-log= command, which I have aliased to git
    sl.
 
-** Getting distracted 
+### Getting distracted 
 
    Sometimes I'll be half-way through working on a task and I will
    have to context-switch to another task. I don't want to commit my
@@ -138,7 +138,7 @@
    drop= assuming nothing went wrong when applying the latest
    stash. This is safer than using =git stash pop= directly.
 
-** Problems in the wild 
+### Problems in the wild 
 
    There is a caveat to using =git-smart=, and that is it doesn't play
    nicely with Git submodules. What happens is, a submodule that is
@@ -149,7 +149,7 @@
    potentially cause problems. In practice, this shouldn't be an issue
    because submodules should be avoided anyway.
 
-** Conclusion 
+### Conclusion 
 
    Learning to harness the power of Git properly is a key factor in
    communicating with colleagues effectively, and it also makes
@@ -158,14 +158,14 @@
    Uninstall SourceTree. Abandon git-flow.
 
 
-* Deleting
+## Deleting
 
-** Delete a file under version control
+### Delete a file under version control
 
    git rm file1.txt
    git commit -m "remove file1.txt"
 
-** Delete a branch
+### Delete a branch
 
    *List local branches only*
    git branch
@@ -177,7 +177,7 @@
    git push origin --delete remote_branch_name
 
 
-* Branching
+## Branching
 
 ** Create a new branch
 
@@ -188,7 +188,7 @@
 git checkout --track origin/daves_branch
 
 
-* Adding and committing selectively
+## Adding and committing selectively
 
 ** Adding only modified files
 
@@ -199,7 +199,7 @@ git checkout --track origin/daves_branch
    git ls-files --others --exclude-standard >> .gitignore
 
 
-* Diffing
+## Diffing
 
 ** Diff two branches for changed files
 
@@ -215,7 +215,7 @@ git checkout --track origin/daves_branch
     git diff --name-only master origin/master 
 
 
-* Pushing
+## Pushing
 
 ** New local branch to origin
 
@@ -224,7 +224,7 @@ git checkout --track origin/daves_branch
    $ git push -u origin feature_branch_name
 
 
-* Reverting
+## Reverting
 
 ** Revert last 'add' operation
 
@@ -244,7 +244,7 @@ or
 
 ** Revert to a specific commit
 
-# This will destroy any local modifications.
+[This will destroy any local modifications.]#
 # Don't do it if you have uncommitted work you want to keep.
 git reset --hard 0d1d7fc32
 
